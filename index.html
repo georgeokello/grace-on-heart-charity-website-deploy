@@ -1,12 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="Grace on heart charity, a home of homeless, no act of compassion, love, and service is too small. We investing in children, the people, and the communities that they live in. Everyone has something to give, it can be your time, your knowledge and expertise, or a financial donation.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grace on heart charity</title>
+    <link rel="icon" href="img/logo.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready( function(){
+        $("#im").hide();
+        $("#vi").hide();
+
+        $("#galleryImages").click(function(){
+          $("#vi").hide();
+          $("#im").show();
+        })
+
+        $("#galleryVideos").click(function(){
+          $("#vi").show();
+          $("#im").hide();
+        })
+      });
+    
+    </script>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" class="circle" width="45px" alt="logo of grace on heart charity"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon ml-auto"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#Home" onclick="scrollpage('Home');">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#sponsor"  onclick="scrollpage('sponsor');">Sponsor A child</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs"  onclick="scrollpage('programs');">Project program</a>
+                    </li> 
+                    <li class="nav-item">
+                      <a class="nav-link" href="#info">Info</a>
+                    </li> 
+                    <li class="nav-item">
+                      <a class="nav-link" href="#news">News & Updates</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts"  onclick="scrollpage('contacts'); return false">Contacts</a>
+                    </li> 
+                </ul>
+            </div>
+        </nav>      
+    </header>
+
+    <article style="margin-top: 0;" class="container-fluid bg-light" id="Home">
+        <h1>Grace on heart charity<small>, <i style="color: rgb(172, 22, 172); font-weight:bolder">every life counts !!!</i></small> </h1>
+        <div id="video-box" class="text-center">
+          <video style="max-width: 100%;" controls autoplay muted loop>
+            <source src="img/homeVideo.mp4" type="video/mp4">
+            your browser doesnt vedios support
+          </video>
+        </div> 
+        <div id="overlay" class="container-fluid text-center">
+          <h4><strong>No act of compassion, love, and service is too small to <br> make a difference in the lives of those that live in <br> wait of hope that perhaps tomorrow will be a delight</strong></h4>
+        </div>
+    </article>
+
+    <div id="imagebg" class="container-fluid" style="height: 300px;">
+    </div>
+
+    <article class="container-fluid" id="About">
+        <div id="about" class="container-fluid">
+            <div class="row">
+              <div class="col-sm-8">
+                <div id="poverty-title">
+                  <h2 style="background-color: rgb(172, 22, 172); color:rgb(252, 236, 236); padding: 15px;" class="text-center">Our Background</h2><br>
+                  <p><strong>Grace on heart charity foundation is a charity non-profit organization founded in Uganda in 2015 but fully registered in 2019. The vision of GOHC charity foundation is to create a sustainable healthy, literate and self- reliant, generation in Uganda and Africa at large. We believe that this will bring positive change to the lives of the challenged potential and school-going children and youth that are at risk of missing education as a basic necessity in Uganda and Africa at large. The organization works to improve the lives of school-going children especially orphans and their communities in Uganda, through education, out riches, healthy, and sanitation as well as skills development.</strong>
+                  <span><button id="more" type="button" data-toggle="collapse" data-target="#more-about"><img src="img/ic_expand_more_white_18dp.png" width="15px"></button></span>
+                  </p><br>
+                <p id="more-about" class="collapse">We believe in building a brighter future by investing in the children, the people, and the communities that they live in. What we do as an organization committed to helping children better themselves; cannot be done without the help of like you. Grace on heart charity foundation doesn’t necessarily work on its own, we believe everyone has something to give; it can be your time, your knowledge and expertise, or a financial donation. We believe that success due to the implementation of these programs will come only if we pattern with individuals, communities and other mindful organizations within our line of operation.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+               
+                </div>
+              </div>
+            </div>
+          </div>
+    </article>
+
+    <div id="imagebg2" class="container-fluid" style="height: 200px;">
+    </div>
+  
+    <article class="container-fluid" id="ourValues">
+      <h2 class="text-center">Mission To Africa</h2><br>
+        <div class="container-fluid bg-grey">
+            <div class="row">
+              <div class="col-sm-4 text-center">
+                <img id="imgForMission" src="img/missionImg.jpg" width="250px" alt="logo of the organisation">
+              </div>
+              <div class="col-sm-8">
+                <p><strong>Grace on heart charity</strong> exists to build a reputable movement with a long term commitment to promote and monitor the fulfillment of the right to basic and secular education.</p>
+                <p>As part of its program to carry out that objective, GOHC works with similar individuals and groups to exchange information, time, resources and talents to build the capacity of our members. Therefore, we are proud to offer you a unique service experience in the form of Africa Mission Trips. These mission trips give team members the opportunity to serve individuals particularly children, and families in Uganda through the sharing of time and talents.</p>
+                <p>No act of compassion, love, and service is too small to make a difference in the lives of those that live in wait of hope that perhaps tomorrow will be a delight. It is our assurance to anyone that participates in these mission trips that, “Your impact will be felt for years to come!”</p>
+              </div>
+            </div>
+          </div>
+    </article>
+
+    <div id="imagebg3" class="container-fluid" style="height: 200px;">
+    </div>
+  
+
+    <article class="container-fluid">
+      <h2 class="text-center" id="sponsor">Sponsor A child</h2>
+      <div class="row">
+        <div  class="col-sm-4">
+          <div id="Donate-title">
+            <h3 class="text-center">Donate</h3>
+          <p>When you don’t have a lot of money, putting food on the table can be tough. So what do families do in places such as Uganda where resources are scarce and money is scarcer? Between 2013 and 2015, it is estimated that more than 500,000 young Ugandan children died. Of deaths, nearly half were associated with under nutrition. Under nutrition is responsible for four in 10 deaths of children under five.</p>
+          <button id="button-donate-more" type="button" data-toggle="collapse" data-target="#more-donate"><img src="img/ic_expand_more_white_18dp.png" width="15px"></button>
+          <p id="more-donate" class="collapse">
+          The 2012 study, Cost of Hunger in Uganda, estimated the health cost of children’s under nutrition-related illnesses (for those under five) to be more than UGX 525 billion, most of which was used for treating under nutrition and associated illnesses. It is also estimated that under nutrition costs Uganda 1.8 trillion UGX, an equivalent of 5.6 per cent of its GDP annually. Your gift will provide a nutritious meal for a child who may not have eaten in days. Instead of searching the streets or garbage dumps for food, they will be fed one good meal a day at school, and at the orphanage. The meal costs 20 cents, and contains all a child needs to grow up healthy.
+          Younger people are among the least prioritized in health and development efforts in Uganda.  We want to change the way of thinking in youth from what they see around them, teach about the youth about the contraceptives, the danger of HIV/AIDS, the risk of younger pregnancy, and what to do if you find yourself in a situation you are not comfortable with. Training camps are always organized to teach about personal hygiene
+          </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="education-title">
+            <h3 class="text-center">Educate</h3>
+            <img src="img/child.jpg" class="text-center" width="200px" alt="photo of a child telling us her dream job">
+            <p>Despite the availability of physical facilities  such classrooms and a good number of teachers  for students instruction , may other scholastic material  a fundamental at limiting primary pupils from developing sounding literacy and numerous skills at primary  and schools principle among them are study and  teaching  materials like textbooks, curriculum  guides  work books, teaching board, chalk or marker among many  others.</p>
+            <button id="button-more-educate" type="button"  data-toggle="collapse" data-target="#more-educate"><img src="img/ic_expand_more_white_18dp.png" width="15px"></button>
+            <p id="more-educate" class="collapse">These scholastic materials play a critical role in determining student academic outcomes, there retention in school as well as attracting parents to send them there.
+              All this creates an environment   that motivates teachers as well as interesting students to stay in school and develop excellent academic attributes.
+            </p>
+          </div> 
+        </div>
+        <div class="col-sm-4">
+          <div id="poverty-title">
+            <h3 class="text-center">Poverty</h3>
+            <p>Through our Village Savings and Loan programs, we hope families will be self-reliant, financially stable and able to support and strengthen their communities.</p>
+            <p>Poverty leads to hunger — but if we work together, we can create a world where no child goes to bed hungry and no family can miss food at the table.</p>
+          </div>
+        </div>
+      </div> 
+    </article>
+
+    <div id="imagebg5" class="container-fluid" style="height: 200px;">
+    </div>
+
+    <article class="container-fluid" style="background-color: rgb(153, 171, 189); padding:10px; color:rgb(252, 236, 236); margin:10px" id="portfolio">
+        <!-- Container (Portfolio Section) -->
+        <div id="portfolio" class="container-fluid text-center bg-grey">
+            <h2>Portfolio</h2><br>
+            <h4>What we are doing</h4>
+            <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                <img src="img/educating.jpg" alt="photo of children in class" width="300" height="250">
+                <p><strong>Educating</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                <img src="img/Providing.jpg" alt="photo of family that have received items" width="300" height="250">
+                <p><strong>Providing</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                <img src="img/inspiring.jpg" alt="photo of a child sharing her dream" width="300" height="250">
+                <p><strong>Inspiring</strong></p>
+                </div>
+            </div>
+        </div><br>  
+    </article>
+
+    <div id="imagebg4" class="container-fluid" style="height: 200px;">
+    </div>
+  
+
+    <article class="container-fluid">
+      <h2 class="text-center" id="programs">Project Progams</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div id="health-title">
+            <h3 class="text-center">Health Project</h3>
+            <p>The community is comprised  of younger men and women, in school and outside  of school , working and unemployed, married and unmarried  sexually active or abstinent, with children or without , and many still children themselves .in short,  its extremely important to recognize the diversity of this age group when developing a reproductive and sexual health program and service.
+              <span><button id="button-more-health" type="button" data-toggle="collapse" data-target="#more-health"><img src="img/ic_expand_more_white_18dp.png" width="15px"></button></span>
+            </p>
+            <p id="more-health" class="collapse">Younger people are among the least prioritized in health and development efforts in Uganda.  We want to change the way of thinking in youth from what they see around them, teach about the youth about the contraceptives, the danger of HIV/AIDS, the risk of younger pregnancy, and what to do if you find yourself in a situation you are not comfortable with. Training camps are always organized to teach about personal hygiene</p>
+            <button id="donate-now-button" type="button" data-toggle="collapse" data-target="#donate-health">DONATE now</button>
+            <div id="donate-health" class="container-fluid text-center collapse">
+              <div>
+                <h4>Western Union</h4>
+                <p><strong>ID Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Country: </strong>UGANDA</p>
+                <p><span><img src="img/ic_call_end_white_18dp.png" width="25px"></span> +256788115136</p>
+              </div>
+              <hr>
+              <div>
+                <h4>Standbic Bank</h4>
+                <p><strong>Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Acc No: </strong>9030017883177</p>
+                <p><strong>Swift Code: </strong>SBICUGKXXX</p>
+              </div>
+              <hr>
+              <div>
+                <h4>World Remit</h4>
+                <p>Mtn Mobile Money</p>
+                <p><strong>Account Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Account:</strong> 788115136</p>
+                <p><strong>Country: </strong>UGANDA</p>
+                <p><strong>City: </strong>Kampala</p>
+                <p><strong>Address, </strong>Masaka</p>
+                <p><span><img src="img/ic_call_end_white_18dp.png" width="25px"></span> +256750655514</p>
+                <p><span><img src="img/ic_email_white_18dp.png" width="25px"></span> graceonheartcharity@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="foodRelief-title">
+            <h3 class="text-center">Food Relief Program</h3>
+            <p>Emergencies are described as “urgent situations in which there is clear evidence that an event, or series of events, has occurred which causes human suffering or imminently threatens lives or livelihoods, and which the government concerned has not the means to remedy; and it is a demonstrably abnormal event, or series of events, which produces dislocation in the life of a community on an exceptional scale.”
+              <span><button id="button-more-relief" type="button"   data-toggle="collapse" data-target="#more-foodRelief"><img src="img/ic_expand_more_white_18dp.png" width="15px"></button></span>
+            </p>
+            <p id="more-foodRelief" class="collapse">To this day, we continue to assist hundreds of people displaced, rendered homeless or deprived of basic resources by cataclysmic events, whether man-made or natural, avoidable or not. Through decades of crises and countless interventions, we have developed a unique body of expertise in addressing emergencies. This applies both to programming – the set of policies and concepts that guide our action – and to the mechanisms of preparedness and response. Emergency Programming Framework built around:</p>
+            <button id="donate-now-button" type="button" data-toggle="collapse" data-target="#donate-foodrelief">DONATE now</button>
+            <div id="donate-foodrelief" class="container-fluid text-center collapse">
+              <div>
+                <h4>Western Union</h4>
+                <p><strong>ID Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Country: </strong>UGANDA</p>
+                <p><span><img src="img/ic_call_end_white_18dp.png" width="25px"></span> +256788115136</p>
+              </div>
+              <hr>
+              <div>
+                <h4>Standbic Bank</h4>
+                <p><strong>Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Acc No: </strong>9030017883177</p>
+                <p><strong>Swift Code: </strong>SBICUGKXXX</p>
+              </div>
+              <hr>
+              <div>
+                <h4>World Remit</h4>
+                <p>Mtn Mobile Money</p>
+                <p><strong>Account Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Account:</strong> 788115136</p>
+                <p><strong>Country: </strong>UGANDA</p>
+                <p><strong>City: </strong>Kampala</p>
+                <p><strong>Address, </strong>Masaka</p>
+                <p><span><img src="img/ic_call_end_white_18dp.png" width="25px"></span> +256750655514</p>
+                <p><span><img src="img/ic_email_white_18dp.png" width="25px"></span> graceonheartcharity@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="poverty-title">
+            <h3 class="text-center">Widows Program</h3>
+          <p>As is often said, motherhood is a privilege, the most beautiful phase of a woman’s life and comes with the most extraordinary moments; the first touch of the baby, first cry, first time the baby stands up and reaches out to you, the baby’s first words. No experience in the world can compare to the joy that raising a child brings. Though Parenting challenges faced by widows are immense; as they play the role of both mother and father, they might feel overwhelmed by the load of responsibilities that is on their shoulders especially in this trying time of hunger in my community is involved in after facing natural disaster of Floods , Locusts and largely the world wide pandemic of Covid -19  which has caused their parenting moments hard and challenging to see their kids starve therefore, it is of utmost importance that I call for your co-ordination and support in this regard…  we</p>
+          <button id="donate-now-button" type="button" data-toggle="collapse" data-target="#donate-widow">DONATE now</button>
+            <div id="donate-widow" class="container-fluid text-center collapse">
+              <div>
+                <h4>Western Union</h4>
+                <p><strong>ID Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Country: </strong>UGANDA</p>
+                <p><span><img src="img/ic_call_end_white_18dp.png" width="25px"></span> +256788115136</p>
+              </div>
+              <hr>
+              <div>
+                <h4>Standbic Bank</h4>
+                <p><strong>Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Acc No: </strong>9030017883177</p>
+                <p><strong>Swift Code: </strong>SBICUGKXXX</p>
+              </div>
+              <hr>
+              <div>
+                <h4>World Remit</h4>
+                <p>Mtn Mobile Money</p>
+                <p><strong>Account Name: </strong>KASOZI EDWARD</p>
+                <p><strong>Account:</strong> 788115136</p>
+                <p><strong>Country: </strong>UGANDA</p>
+                <p><strong>City: </strong>Kampala</p>
+                <p><strong>Address, </strong>Masaka</p>
+                <p><span><img src="img/ic_call_end_white_18dp.png" width="25px"></span> +256750655514</p>
+                <p><span><img src="img/ic_email_white_18dp.png" width="25px"></span> graceonheartcharity@gmail.com</p>
+              </div>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="business"
+                    value="georgeokello335@gmail.com">
+                <input type="hidden" name="cmd" value="_donations">
+                <input type="hidden" name="item_name" value="Friends of the Park">
+                <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="image" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_92x26.png"
+                alt="Donate">
+                <img alt="" width="1" height="1"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+            
+            </form>
+          </div>
+        </div>
+      </div> 
+    </article>
+
+    <div id="imagebg6" class="container-fluid" style="height: 200px;">
+    </div>
+
+    <article class="container-fluid">
+      <h2 id="news" class="text-center">News & Updates</h2>
+      <div id="myCarousel" class="carousel slide carousel-fade text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
     
+        <!-- content to slide, slideshow -->
+        <div  class="carousel-inner">
+          <div style="height: auto;"  class="carousel-item active">
+            <div id="img-container">
+              <img src="img/chidren in class.jpg" alt="children in their class" width="800px">
+              <div id="text-on-image">
+                <h4>Scholastic materials play a critical role in determining student's academic outcomes</h4>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="img-container">
+              <img src="img/children playing.jpg" alt="photo of children playing" width="800px">
+              <div id="text-on-image">
+                <h4>We believe in building a brighter future by investing in the children, the people, and the communities that they live in.</h4>
+              </div>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <div id="img-container">
+              <img  src="img/people in camp.jpg" alt="people in camp" width="700px">
+              <div id="text-on-image">
+                <h4>To this day, we continue to assist hundreds of people displaced, rendered homeless by cataclysmic events, whether man-made or natural, avoidable or not. </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    </article>
+
+    <article class="container-fluid">
+      <h3 style="color: rgb(172, 22, 172); font-weight:bolder">Gallery</h3>
+      <span id="galleryImages"><button class="btn btn-info">Images</button> </span><span id="galleryVideos"><button class="btn btn-info">Videos</button></span>
+      <div style="background: rgba(42, 49, 43, 0.5); margin:10px; padding:10px" id="im">
+        <div class="row text-center">
+          <div class="col-sm-3">
+            <img src="img/gallery1.jpg" alt="family that has received food stuff" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery2.jpg" alt="photo of football team" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery3.jpg" alt="photo of an hungry child" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery4.jpg" alt="photo of children eating" width="200px">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-3">
+            <img src="img/gallery5.jpg" alt="photo of three girls holding each other" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery6.jpg" alt="photo of happy children" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery7.jpg" alt="another photo of happy children" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallary8.jpg" alt="photo of mothers from our community" width="200px">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-3">
+            <img src="img/gallery9.jpg" alt="photo of girls smiling" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery10.jpg" alt="photo of little girls eating sweets" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery11.jpg" alt="photo of the CEO and the chidren of grace on heart charity" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery12.jpg" alt="photo of a young girls cooking for the community" width="200px">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-3">
+            <img src="img/gallery13.jpg" alt="photo of people in line to receive food stuff" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery14.jpg" alt="photo of a man working (welding)" height="400px" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery15.jpg" alt="photo of a familt that has just received their food stuff" height="400px" width="200px">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/gallery16.jpg" alt="photo of a girl sitting on her bag of maize floor" height="400px" width="200px">
+          </div>
+        </div>
+      </div>
+      <div id="vi">
+        <div  class="row text-center">
+          <div class="col-sm-3">
+            <video style="max-width: 100%; width:300px; height:400px; padding:10px" controls >
+              <source src="videos/vid 1.mp4" type="video/mp4">
+              you browser doesnt support videos
+            </video>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="container-fluid" id="contacts">
+        <div class="container-fluid">
+            <div class="row ">
+                <div id="sitemap" class="col-sm-6">
+                    <h3 class="text-center">SiteMap</h3>
+                    <hr>
+                    <a class="nav-link" href="#Home">Home</a>     
+                    <a class="nav-link" href="#programs">Project Program</a> 
+                    <a class="nav-link" href="#sponsor">Sponsor A child</a>  
+                    <a class="nav-link" href="#portfolio">Portfolio</a> 
+                    <a class="nav-link" href="#contacts">Contacts</a>
+                </div>
+                <div id="contactIcons" class="col-sm-6 text-center">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="http://www.facebook.com/Grace-on-heart-charity-foundation-100149328971889/"><img src="img/facebook.svg" width="30"></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/008-twitter.svg" width="30">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/005-whatsapp.svg" width="30">
+                        </div>
+                    </div>
+                    <div style="padding: 15px;" class="row text-center">
+                      <div id="donate-health" class="col-sm-12 text-center">
+                        <p><span><img src="img/ic_email_white_18dp.png" width="25px"></span> graceonheartcharity@gmail.com</p>
+                        <p><span><img src="img/ic_call_end_white_18dp.png" width="25px"></span> +256788115136/+256750655514</p>
+                        <p>456-789-1234</p>
+                        <p>Uganda Masaka, kijjabwemi Masaka-mbara road</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/ic_expand_less_white_18dp.png" width="15px"></button>
+    </footer>
+  
+<script>
+     //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 </body>
 </html>
